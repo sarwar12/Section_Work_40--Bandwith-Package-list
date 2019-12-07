@@ -1,0 +1,143 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: ;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:hover{
+	text-decoration: none;
+}
+/* Main CSS Stop */
+
+/* Pricebox Section Start */
+.section-bg-1{
+	background-image: url(../img/apus_hill.jpg);
+	background-size: cover;
+	background-position:center top;
+}
+.section-padding.section-bg-1 {
+	background-attachment: fixed;
+}
+.section-padding {
+	padding: 100px 0;
+	position: relative;
+}
+.price-boxes {
+  box-shadow: 0 0 20px #555;
+  overflow: hidden;
+}
+.single-price-box {
+	float: left;
+	width: 33.333333%;
+	position: relative;
+	z-index: 1;
+}
+.single-price-box::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #333;
+  opacity: .2;
+}
+.single-price-box:last-child::after {
+  display: none;
+}
+.price-box-image {
+  display: table;
+  width: 100%;
+  height: 175px;
+}
+.price-box-image img {
+  max-width: 180px;
+  max-height: 160px;
+}
+.price-box-img-wrap {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+.price-box-inner {
+  background-color: #fff;
+  padding: 30px;
+  color: #3c76c0;
+  text-align: center;
+}
+.price-box-inner h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #3c76c0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.price-box-inner h3 span {
+  display: inline-block;
+  position: relative;
+  color: #d25529;
+  font-weight: 800;
+  font-size: 40px;
+}
+.price-box-inner h3 span:before {
+  content: "$";
+  font-size: 24px;
+  position: absolute;
+  left: -21px;
+  top: -2px;
+  font-weight: 400;
+}
+.price-box-inner h3 span::after {
+  content: "/mo";
+  font-weight: 400;
+  font-size: 23px;
+  margin-left: 5px;
+}
+.price-box-inner h3 {
+  text-align: center;
+  padding-left: 17px;
+}
+.price-content h3 {
+  text-align: center;
+}
+.price-box-inner ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 20px;
+  line-height: 28px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.boxed-btn {
+  text-transform: uppercase;
+  color: #fff;
+  background: #3c76c0;
+  font-weight: 700;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.boxed-btn:hover,.boxed-btn.active:hover {
+  color: #fff;
+  background: #333;
+}
+.price-box-inner a {
+  transition: 0.3s;
+}
+.boxed-btn.active {
+	background: #d25529;
+}
+/* Pricebox Section Stop */
